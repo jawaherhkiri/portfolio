@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  rgba(255,255,255,.25);
+}
+
+a {
+    text-decoration: none;
+}
+.space{
+    height: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+                /* --------------- HEADER ---------------- */
+header {
+    position: fixed;
+    top: -10px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: rgb(0 0 0 / 15%) 5px 5px 10px;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    z-index: 3;
+}
+.head {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    text-align: center;
+}
+
+header a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(199 15 87);
+    /* #c70f57 */
+    margin:0 40px 50% 0;
+    padding: 50px 0 0 0;
+}
+
+header a:hover{
+    color: #363338;
+    
+    /* text-shadow: #363338 2px 2px 2px; */
+}
+
+                /* --------------- Home ---------------- */
+nav {
+    width: 100%;
+    height: 650px;
+}
+
+.definition {
+    position: relative;
+    top: 193px;
+    left: 200px;
+    display: inline-block;
+}
+
+.greeting {
+    color: gray;
+    font-size: 20px;
+}
+
+.name {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.study {
+    margin-top: 5px;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+nav .img {
+    margin: 15px 11px 0 5px;
+    width: 27px;
+}
+
+nav .img:hover {
+    width: 35px;
+}
+
+.cv {
+    width: 000px;
+    height: 000px;
+    position: absolute;
+    top: -40px;
+    right: 50px;
+}
+
+.close {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button {
+    border: white;
+    background-color: white;
+}
+
+
+.btn {
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    background: linear-gradient(320deg, white 1%, #df165b 100%);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-radius: 7%;
+    width: 60px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  
+.btn:hover {
+    color: rgb(248, 248, 248);
+    background: linear-gradient(99deg, rgb(199, 15, 87) 0%, rgb(215, 169, 146) 130%);
+    transform: scale(1.05);
+    transition: all 0.2s ease 0s;
+
+    font-size: 20px;
+    width: 60px;
+    border-radius: 7%;
+  }
+
+                /* --------------- About Me ---------------- */
+#about_me{
+    padding: 70px 0 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.principal {
+    height: 700px;
+    background: linear-gradient(132deg, white 1%, #df165b 43%);
+    position: relative;
+}
+
+.picture_jawaher {
+    margin: 100px 200px; 
+    width: 200px;
+    border-radius: 100%;
+    border: solid 5px white;
+    display: inline-block;
+}
+
+.para {
+    display: inline-block;
+    width: 970px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(248, 248, 248);
+    /* padding: 100px; */
+    position: relative;
+    top: 60px;
+    right: 70px;
+}
+
+.para p{
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.quote{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    color:#c70f57;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FBFCFC;
+    box-shadow: rgb(0 0 0 / 10%) 5px 10px 0px;
+    width: 400px;
+    height: 50px;
+}
+
+span{
+    display: block;
+    text-align: right;
+    font-family:none;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+            /* --------------- Skills ---------------- */
+#skills{
+    padding: 70px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.skills{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.html {
+    width: 80px;
+}
+.css {
+    width: 120px;
+}
+.js {
+    width: 81px;
+}
+.java {
+    width: 125px;
+}
+.springboot {
+    width: 120px;
+}
+.react {
+    width: 100px;
+}
+.php {
+    width: 110px;
+}
+.oracle {
+    width: 85px;
+}
+.python {
+    width: 90px;
+}
+.mysql {
+    width: 120px;
+}
+
+                /* --------------- Tools---------------- */
+#tools{
+    padding: 70px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.tools{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.figma{
+    width: 90px;
+}
+
+            /* --------------- Education ---------------- */
+#certificate{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.certificate {
+    text-align: center;
+}
+
+.first_certificate {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.first_certificate .pic {
+    width: 550px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+.second_certificate{
+    margin: 0 auto 70px;
+    height: 570px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-2 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-2 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.second_certificate .zertificat {
+    width: 500px;
+    height: 90%;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+.third_certificate {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.third_certificate .pic {
+    width: 600px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+            /* --------------- Experience ---------------- */
+#experience{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.experience {
+    text-align: center;
+    /* display: inline-block; */
+}
+
+.first_experience {
+    margin: 0 auto 70px;
+    height: 999px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.first_experience .pic {
+    width: 550px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+
+.watch {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    background: linear-gradient(320deg, white 1%, #df165b 100%);
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.watch:hover {
+    color: rgb(248, 248, 248);
+    background: linear-gradient(99deg, rgb(199, 15, 87) 0%, rgb(215, 169, 146) 130%);
+    transform: scale(1.05);
+    transition: all 0.2s ease 0s;
+
+    font-size: 20px;
+    width: 170px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    border-radius: 7%;
+}
+
+.nmtc-video {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+
+}
+
+.close-video {
+    width: 0px;
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.nmtc_pic_1 {
+    width: 250px;
+    position: absolute;
+    bottom: 150px;
+    right: 920px;
+    z-index: 2;
+}
+
+.nmtc_pic_2 {
+    width: 380px;
+    position: absolute;
+    bottom: 266px;
+    right: 535px;
+    z-index: 2;
+}
+.nmtc_pic_3 {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+    right: 415px;
+    z-index: 2;
+}
+.nmtc_pic_4 {
+    width: 385px;
+    position: absolute;
+    bottom: 268px;
+    right: 142px;
+    z-index: 2;
+}
+.nmtc_pic_5 {
+    width: 380px;
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    z-index: 2;
+    
+}
+
+            /* --------------- Projects ---------------- */
+#projects{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+}
+
+.first_project {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.project_pic1 {
+    width: 520px;
+    height: 220px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.project_pic2 {
+    width: 400px;
+    height: 270px;
+    position: absolute;
+    top: 235px;
+    right: 380px;
+}
+
+.project_pic3 {
+    width: 370px;
+    height: 270px;
+    position: absolute;
+    top: 235px;
+    right: 7px;
+}
+
+.second_project {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.second_project .vid {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 30px;
+
+}
+
+            /* -------------------- Footer -------------------- */
+footer{
+    padding: 0;
+}
+
+#contact{
+    padding: 100px 0 0px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+.information {
+    padding-bottom: 150px;
+}
+.information p{
+    color: 0 0 1rem rgb(0 0 0 / 60%);;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.information p a{
+    color: #c70f57;
+
+}
+
+.information p a:hover{
+    color: black;
+}
+
+.developer{
+    height: 50px;
+    background: linear-gradient(134deg, white 0%, #c70f57 99%);
+    margin-bottom: 0px;
+}
+
+.developer p{
+    font-family: Karla, sans-serif;
+    font-size: 17.5px;
+    text-align: center;
+    padding: 16.25px 16.25px 0;
+}
+.developer a{
+    font-family: Karla, sans-serif;
+    font-size: 17.5px;
+    text-align: center;
+    padding: 16.25px;
+    color: black;
+}
+
+.developer a:hover{
+    color: white;
+}
