@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  rgba(255,255,255,.25);
+}
+
+a {
+    text-decoration: none;
+}
+.space{
+    height: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+                /* --------------- HEADER ---------------- */
+header {
+    position: fixed;
+    top: -10px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: rgb(0 0 0 / 15%) 5px 5px 10px;
+    height: 3.75rem;
+    width: 100%;
+    align-items: center;
+    z-index: 3;
+}
+.head {
+    position: absolute;
+    right: 10%;
+    top: 1.25rem;
+    text-align: center;
+}
+
+header a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(199 15 87);
+    /* #c70f57 */
+    margin:0 40px 50% 0;
+    padding: 50px 0 0 0;
+}
+
+header a:hover{
+    color: #363338;
+    
+    /* text-shadow: #363338 2px 2px 2px; */
+}
+
+                /* --------------- Home ---------------- */
+nav {
+    width: 100%;
+    height: 40.625rem;
+}
+
+.definition {
+    position: relative;
+    top: 12.0625rem;
+    left: 12.5rem;
+    display: inline-block;
+}
+
+.greeting {
+    color: gray;
+    font-size: 1.25rem;
+}
+
+.name {
+    font-size: 3.75rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.study {
+    margin-top: 0.3125rem;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.375rem;
+}
+
+nav .img {
+    margin: 0.9375rem 0.6875rem 0 0.3125rem;
+    width: 1.6875rem;
+}
+
+nav .img:hover {
+    width: 2.1875rem;
+}
+
+.cv {
+    width: 000px;
+    height: 000px;
+    position: absolute;
+    top: -2.5rem;
+    right: 3.125rem;
+}
+
+.close {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 6.875rem;
+    right: 3.125rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button {
+    border: white;
+    background-color: white;
+}
+
+
+.btn {
+    margin: 0.9375rem;
+    font-size: 1.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    width: 9.375rem;
+    background: linear-gradient(320deg, white 1%, #df165b 100%);
+    color: rgb(255, 255, 255);
+    padding: 0.625rem 0;
+    border-radius: 7%;
+    width: 3.75rem;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  
+.btn:hover {
+    color: rgb(248, 248, 248);
+    background: linear-gradient(99deg, rgb(199, 15, 87) 0%, rgb(215, 169, 146) 130%);
+    transform: scale(1.05);
+    transition: all 0.2s ease 0s;
+
+    font-size: 1.25rem;
+    width: 3.75rem;
+    border-radius: 7%;
+  }
+
+                /* --------------- About Me ---------------- */
+#about_me{
+    padding: 4.375rem 0 1.25rem;
+    font-size: 1.875rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.principal {
+    height: 43.75rem;
+    /* background: linear-gradient(132deg, white 1%, #df165b 43%); */
+    background: #ec008c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: relative;
+}
+
+.picture_jawaher {
+    margin: 6rem 12.5rem; 
+    width: 12.5rem;
+    border-radius: 100%;
+    border: solid 0.3125rem white;
+    display: inline-block;
+}
+
+.para {
+    display: inline-block;
+    max-width: 900px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    /* padding: 100px; */
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+
+.para p{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    margin: 1.25rem 0;
+}
+
+.quote{
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    color:#c70f57;
+    letter-spacing: 3px;
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    font-size: 1.125rem;
+    background-color: #FBFCFC;
+    box-shadow: rgb(0 0 0 / 10%) 5px 10px 0px;
+    width: 25rem;
+    height: 3.125rem;
+}
+
+span{
+    display: block;
+    text-align: right;
+    font-family:none;
+    font-size: 1.0625rem;
+    margin-top: 0.3125rem;
+}
+
+            /* --------------- Skills ---------------- */
+#skills{
+    padding: 4.375rem 0 3.125rem;
+    font-size: 1.875rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.skills{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.html {
+    width: 5rem;
+}
+.css {
+    width: 7.5rem;
+}
+.js {
+    width: 5.0625rem;
+}
+.java {
+    width: 7.8125rem;
+}
+.springboot {
+    width: 7.5rem;
+}
+.react {
+    width: 6.25rem;
+}
+.php {
+    width: 6.875rem;
+}
+.oracle {
+    width: 5.3125rem;
+}
+.python {
+    width: 5.625rem;
+}
+.mysql {
+    width: 7.5rem;
+}
+
+                /* --------------- Tools---------------- */
+#tools{
+    padding: 4.375rem 0 3.125rem;
+    font-size: 1.875rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.tools{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.figma{
+    width: 5.625rem;
+}
+
+            /* --------------- Education ---------------- */
+#certificate{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.certificate {
+    text-align: center;
+}
+
+.first_certificate {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.first_certificate .pic {
+    width: 550px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+.german_certificate {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-3 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak3 h1 {
+    max-width: 200px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-3 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.german_certificate .pic3 {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    position: absolute;
+    top: 0px;
+
+}
+
+.second_certificate{
+    margin: 0 auto 70px;
+    height: 570px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-2 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-2 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.second_certificate .zertificat {
+    width: 500px;
+    height: 90%;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+.third_certificate {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    width: 500px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.third_certificate .pic {
+    width: 600px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+            /* --------------- Experience ---------------- */
+#experience{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.experience {
+    text-align: center;
+    /* display: inline-block; */
+}
+
+.first_experience {
+    margin: 0 auto 70px;
+    height: 999px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.first_experience .pic {
+    width: 550px;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+
+}
+
+
+.watch {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    background: linear-gradient(320deg, white 1%, #df165b 100%);
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.watch:hover {
+    color: rgb(248, 248, 248);
+    background: linear-gradient(99deg, rgb(199, 15, 87) 0%, rgb(215, 169, 146) 130%);
+    transform: scale(1.05);
+    transition: all 0.2s ease 0s;
+
+    font-size: 20px;
+    width: 170px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    border-radius: 7%;
+}
+
+.nmtc-video {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+
+}
+
+.close-video {
+    width: 0px;
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.nmtc_pic_1 {
+    width: 250px;
+    position: absolute;
+    bottom: 150px;
+    right: 920px;
+    z-index: 2;
+}
+
+.nmtc_pic_2 {
+    width: 380px;
+    position: absolute;
+    bottom: 266px;
+    right: 535px;
+    z-index: 2;
+}
+.nmtc_pic_3 {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+    right: 415px;
+    z-index: 2;
+}
+.nmtc_pic_4 {
+    width: 385px;
+    position: absolute;
+    bottom: 268px;
+    right: 142px;
+    z-index: 2;
+}
+.nmtc_pic_5 {
+    width: 380px;
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    z-index: 2;
+    
+}
+
+            /* --------------- Projects ---------------- */
+#projects{
+    padding: 100px 0 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+}
+
+.first_project {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.project_pic1 {
+    width: 520px;
+    height: 220px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.project_pic2 {
+    width: 400px;
+    height: 270px;
+    position: absolute;
+    top: 235px;
+    right: 380px;
+}
+
+.project_pic3 {
+    width: 370px;
+    height: 270px;
+    position: absolute;
+    top: 235px;
+    right: 7px;
+}
+
+.second_project {
+    margin: 0 auto 70px;
+    height: 510px;
+    width: 75%;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 60%);
+    border-radius: 2%;
+    position: relative;
+    
+}
+
+.speak-1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.speak-1 h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 28px;
+    text-align: left;
+}
+
+.speak-1 p {
+    margin: 40px 0;
+    width: 500px;
+    display: inline-block;
+    color: black;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.second_project .vid {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 30px;
+
+}
+
+            /* -------------------- Footer -------------------- */
+footer{
+    padding: 0;
+}
+
+#contact{
+    padding: 100px 0 0px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c70f57;
+    text-align: center;
+}
+.information {
+    padding-bottom: 150px;
+}
+.information p{
+    color: 0 0 1rem rgb(0 0 0 / 60%);;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.information p a{
+    color: #c70f57;
+
+}
+
+.information p a:hover{
+    color: black;
+}
+
+.developer{
+    height: 50px;
+    background: linear-gradient(134deg, white 0%, #c70f57 99%);
+    margin-bottom: 0px;
+}
+
+.developer p{
+    font-family: Karla, sans-serif;
+    font-size: 17.5px;
+    text-align: center;
+    padding: 16.25px 16.25px 0;
+}
+.developer a{
+    font-family: Karla, sans-serif;
+    font-size: 17.5px;
+    text-align: center;
+    padding: 16.25px;
+    color: black;
+}
+
+.developer a:hover{
+    color: white;
+}
